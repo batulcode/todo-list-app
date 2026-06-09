@@ -1,5 +1,8 @@
 function addTask() {
     let task = document.getElementById("taskInput").value;
+    if (task === "") {
+    return;
+    }
 
     let li = document.createElement("li");
     li.textContent = task;
@@ -17,3 +20,8 @@ function addTask() {
 
     document.getElementById("taskInput").value = "";
 }
+document.getElementById("taskInput").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        addTask();
+    }
+});

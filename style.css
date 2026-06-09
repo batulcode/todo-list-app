@@ -51,3 +51,6 @@ hr{
 p{
     font-size: 16px;
 }
+button:hover{
+    opacity: 0.8;
+}

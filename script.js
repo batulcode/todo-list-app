@@ -20,11 +20,13 @@ li.appendChild(taskText);
 
     deleteBtn.onclick = function() {
         li.remove();
+        updateTaskCount();
     };
 
     li.appendChild(deleteBtn);
 
     document.getElementById("taskList").appendChild(li);
+    updateTaskCount();
 
     document.getElementById("taskInput").value = "";
 }

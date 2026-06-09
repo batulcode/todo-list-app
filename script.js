@@ -33,3 +33,7 @@ document.getElementById("taskInput").addEventListener("keypress", function(event
         addTask();
     }
 });
+function updateTaskCount() {
+    let totalTasks = document.getElementById("taskList").children.length;
+    document.getElementById("taskCount").textContent = "Tasks: " + totalTasks;
+}

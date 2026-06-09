@@ -10,6 +10,7 @@ taskText.textContent = task;
 
 taskText.onclick = function() {
     taskText.style.textDecoration = "line-through";
+    taskText.style.color = "gray";
 };
 
 li.appendChild(taskText);

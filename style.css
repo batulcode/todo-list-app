@@ -33,3 +33,10 @@ li{
 button{
     margin-left: 10px;
 }
+h1{
+    font-size: 36px;
+}
+
+li{
+    cursor: pointer;
+}

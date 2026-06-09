@@ -39,3 +39,7 @@ function updateTaskCount() {
     let totalTasks = document.getElementById("taskList").children.length;
     document.getElementById("taskCount").textContent = "Tasks: " + totalTasks;
 }
+function clearTasks() {
+    document.getElementById("taskList").innerHTML = "";
+    updateTaskCount();
+}

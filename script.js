@@ -5,7 +5,14 @@ function addTask() {
     }
 
     let li = document.createElement("li");
-    li.textContent = task;
+    let taskText = document.createElement("span");
+taskText.textContent = task;
+
+taskText.onclick = function() {
+    taskText.style.textDecoration = "line-through";
+};
+
+li.appendChild(taskText);
 
     let deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
